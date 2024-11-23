@@ -14,12 +14,15 @@ def main():
     y = SCREEN_HEIGHT / 2
     itme = Player(x, y)
 
-    while True: 
+    # GAME LOOP
+    while True:
         for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     return
                 
         screen.fill("black")
+
+        itme.update(dt)
 
         itme.draw(screen)
 

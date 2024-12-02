@@ -57,8 +57,8 @@ def main():
 
         # limit the timeframe to 60 FPS
         dt = gameclock.tick(60) / 1000
-        
-   
+ 
+    
 
 if __name__ == "__main__":
     main()
